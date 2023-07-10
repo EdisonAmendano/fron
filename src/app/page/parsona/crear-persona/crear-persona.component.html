@@ -1,0 +1,38 @@
+<body>
+    <div class="aa">
+        <div class="t">
+            <mat-card>
+                <mat-card-content class="mat-elevation-z8">
+                    <h1>{{title}}</h1>
+                    <p>Formulario para agregar Personas</p>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    
+        <br>
+    
+        <div id="f" class="mat-elevation-z8">
+            <form>
+                <mat-form-field appearance="fill" class="i">
+                    <mat-label>Nombre</mat-label>
+                    <input matInput name="txtNombre" id="txtNombre" [(ngModel)]="p.name">
+                </mat-form-field><br>
+                <mat-form-field appearance="fill" class="i">
+                    <mat-label>Correo</mat-label>
+                    <input matInput name="txtAutor" id="txtAutor" [(ngModel)]="p.correo">
+                </mat-form-field><br>
+                <mat-form-field appearance="fill" class="i">
+                    <mat-label>Contraseña</mat-label>
+                    <input matInput name="txtDescrip" id="txtDescrip" [(ngModel)]="p.contrasena">
+                </mat-form-field><br>
+            </form>
+            <br>
+            <div class="b">
+                <button (click)="guardar()" mat-raised-button color="primary">Guardar</button>
+                <button (click)="goList()" mat-raised-button color="accent">Listar</button>
+            </div>
+        </div>   
+    </div>
+
+</body>
+
